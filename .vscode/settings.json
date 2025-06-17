@@ -1,0 +1,17 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.hpp": "cpp",
+        "atomic": "cpp",
+        "memory": "cpp",
+        "utility": "cpp",
+        "xstring": "cpp",
+        "string": "cpp",
+        "forward_list": "cpp",
+        "vector": "cpp",
+        "xlocinfo": "cpp",
+        "xutility": "cpp"
+    },
+    "editor.formatOnSave": true
+}

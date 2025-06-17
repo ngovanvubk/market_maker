@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+#include <websocketpp/client.hpp>
+#include <websocketpp/config/asio_no_tls_client.hpp>
+#include <cpprest/http_client.h>
+#include <cpprest/json.h>
+#include <chrono>
+#include <thread>
+#include <mutex>
+#include <fstream>
+#include <iomanip>
+#include <openssl/hmac.h>
+#include <openssl/sha.h>
+#include <sstream>
