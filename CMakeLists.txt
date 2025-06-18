@@ -19,7 +19,7 @@ set(SOURCES
     src/order/order_manager.cpp
     src/utils/logger.cpp
     src/utils/crypto.cpp
-    include/include.hpp
+    src/include.hpp
 )
 
 # Create executable
@@ -36,4 +36,9 @@ target_link_libraries(market_maker
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-target_compile_options(market_maker PRIVATE /W4 /O2)
+# Only add /O2 for Release builds to avoid conflict with /RTC1 in Debug
+if(MSVC)
+    target_compile_options(market_maker PRIVATE $<$<CONFIG:Release>:/O2> /W4)
+else()
+    target_compile_options(market_maker PRIVATE /W4)
+endif()

@@ -17,8 +17,8 @@
 using Clock = std::chrono::high_resolution_clock;
 
 // Common constants
-const double SPREAD = 0.001;  // 0.1% spread
-const double ORDER_QUANTITY = 0.01;  // Fixed order quantity
+const double SPREAD = 0.001;        // 0.1% spread
+const double ORDER_QUANTITY = 0.01; // Fixed order quantity
 
 // Utility function declarations
-void log(const std::string& message);
+void log(const std::string &message);
