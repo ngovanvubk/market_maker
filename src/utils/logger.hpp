@@ -1,7 +1,6 @@
 #pragma once
 #include <string>
+#include <mutex>
 
-namespace utils
-{
-    void log(const std::string &message);
-}
+// Global logging function
+void log(const std::string& message);
